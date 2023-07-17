@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/newStyle.css}">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" value="fakeness" id="myInput" required>
+      <input type="checkbox" onclick="myFunction()"><span>Show Password</span>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
+  <script type="text/javascript" th:src="@{/scriptNew.js}"></script>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Feedbacks</title>
+  <!-- Add your custom CSS styles -->
+  <style>
+    .feedback-container {
+    	width:30%;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    
+    .feedback-card {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feedback-card .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    
+    .feedback-card .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .feedback-card .user-name {
+      font-weight: bold;
+    }
+    
+    .feedback-card .user-rating {
+      color: gold;
+    }
+    
+    .feedback-card .user-feedback {
+      margin-bottom: 10px;
+    }
+    
+    .feedback-card .read-more {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    .feedback-card .read-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="feedback-container">
+    <div class="feedback-card">
+      <div class="user-info">
+        <img class="user-avatar" src="user1.jpg" alt="User Avatar">
+        <div>
+          <span class="user-name">John Doe</span>
+          <span class="user-rating">★★★★★</span>
+        </div>
+      </div>
+      <div class="user-feedback">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel felis ut lorem efficitur sodales vitae et mi."
+      </div>
+      <a class="read-more" href="#">Read More</a>
+    </div>
+    
+    <div class="feedback-card">
+      <div class="user-info">
+        <img class="user-avatar" src="user2.jpg" alt="User Avatar">
+        <div>
+          <span class="user-name">Jane Smith</span>
+          <span class="user-rating">★★★☆☆</span>
+        </div>
+      </div>
+      <div class="user-feedback">
+        "Vestibulum dictum tellus in ante placerat, vel tincidunt dui scelerisque. Sed bibendum varius arcu, nec lacinia mi posuere at."
+      </div>
+      <a class="read-more" href="#">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
